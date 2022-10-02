@@ -11,7 +11,7 @@ const hsConfig = {
   hexo: {
     // Hexo相关配置
     repo: 'Redish101/blog', // 博客源码所在的GitHub仓库
-    gh_token: 'ghp'
+    gh_token: 'ghp' // Github Token
   }
 }
 export default hsConfig
