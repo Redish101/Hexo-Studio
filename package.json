@@ -15,7 +15,6 @@
     "axios-mock-adapter": "^1.18.1",
     "better-scroll": "^1.15.2",
     "blueimp-md5": "^2.19.0",
-    "browserslist": "^4.21.4",
     "caniuse-lite": "^1.0.30001414",
     "core-js": "^3.4.3",
     "dayjs": "^1.8.17",
