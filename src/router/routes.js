@@ -31,6 +31,16 @@ const frameIn = [
         },
         component: _import('system/log')
       },
+      // 系统 设置
+      {
+        path: 'setting',
+        name: 'setting',
+        meta: {
+          title: '设置',
+          auth: true
+        },
+        component: _import('system/setting')
+      },
       // 刷新页面 必须保留
       {
         path: 'refresh',

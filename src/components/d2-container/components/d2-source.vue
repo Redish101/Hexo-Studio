@@ -4,7 +4,7 @@
     class="d2-source"
     :class="{ 'd2-source--active': isActive }"
     @click="handleClick">
-    <d2-icon name="code"/> 本页源码
+    <d2-icon name="code"/> 查看源代码
   </div>
 </template>
 
@@ -39,7 +39,7 @@ export default {
   methods: {
     // 点击按钮的时候跳转到源代码
     handleClick () {
-      this.$open(`${process.env.VUE_APP_REPO}/blob/master/${this.path}`)
+      this.$open(`${process.env.VUE_APP_REPO}/blob/main/${this.path}`)
     }
   }
 }
