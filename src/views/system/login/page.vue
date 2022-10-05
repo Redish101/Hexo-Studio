@@ -23,7 +23,7 @@
           class="page-login--content-main"
           flex="dir:top main:center cross:center">
           <!-- logo -->
-          <img class="page-login--logo" src="./image/logo@2x.png">
+          <img class="page-login--logo" src="/image/logo@2x.png" />
           <!-- form -->
           <div class="page-login--form">
             <el-card shadow="never">

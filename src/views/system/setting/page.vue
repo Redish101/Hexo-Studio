@@ -9,14 +9,15 @@
             <el-form-item label="最新版本:">
               <div id="latest">加载中...</div>
             </el-form-item>
+            <el-form-item label="Hexo仓库:">{{ repo }}</el-form-item>
+            <el-form-item label="Github Token:">{{ gh_token }}</el-form-item>
         </el-form>
     </d2-container>
 </template>
 
 <script>
 import axios from 'axios'
-
-var latestVersion = null
+import hsConfig from '@/../hs.config'
 
 async function getLatestVersion () {
   try {
@@ -36,7 +37,9 @@ getLatestVersion()
 export default {
   data () {
     return {
-      latestVersion: latestVersion
+      repo: hsConfig.hexo.repo,
+      gh_token: '已被隐藏'
+      // gh_token : hsConfig.hexo.gh_token
     }
   }
 }
