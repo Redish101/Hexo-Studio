@@ -153,7 +153,7 @@ module.exports = {
     }
   },
   // 不输出 map 文件
-  productionSourceMap: true,
+  productionSourceMap: false,
   // i18n
   pluginOptions: {
     i18n: {

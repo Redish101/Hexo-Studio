@@ -21,5 +21,16 @@ export const menuHeader = supplementPath([
 
 export const menuAside = supplementPath([
   { path: '/index', title: '首页', icon: 'home' },
+  {
+    title: '文章',
+    icon: 'folder-o',
+    children: [
+      {
+        path: '/post/list',
+        title: '文章列表',
+        icon: 'list'
+      }
+    ]
+  },
   { path: '/setting', title: '设置', icon: 'gear' }
 ])

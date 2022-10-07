@@ -41,6 +41,16 @@ const frameIn = [
         },
         component: _import('system/setting')
       },
+      // Hexo 文章列表
+      {
+        path: 'post/list',
+        name: 'post_list',
+        meta: {
+          title: '文章列表',
+          auth: true
+        },
+        component: _import('post/list')
+      },
       // 刷新页面 必须保留
       {
         path: 'refresh',
