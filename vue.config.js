@@ -4,6 +4,7 @@ const ThemeColorReplacer = require('webpack-theme-color-replacer')
 const forElementUI = require('webpack-theme-color-replacer/forElementUI')
 const cdnDependencies = require('./dependencies-cdn')
 const { chain, set, each } = require('lodash')
+const { GenerateSW } = require('workbox-webpack-plugin')
 
 // 拼接路径
 const resolve = dir => require('path').join(__dirname, dir)
@@ -61,6 +62,11 @@ module.exports = {
           threshold: 10240,
           minRatio: 0.8,
           deleteOriginalAssets: false
+        }),
+        // Service Worker
+        new GenerateSW({
+          swDest: 'sw.js',
+          skipWaiting: true
         })
       ]
     }

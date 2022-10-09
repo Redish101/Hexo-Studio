@@ -15,6 +15,16 @@
     <link href="<%= htmlWebpackPlugin.options.cdn.js[i] %>" rel="preload" as="script">
     <% } %>
     <title><%= VUE_APP_TITLE %></title>
+    <script>
+      (async () => {
+        if ('serviceWorker' in navigator) {
+          navigator.serviceWorker.register('/sw.js')
+        }
+        else {
+          document.write('Hexo Studio Error：您的浏览器不支持Service Worker，无法运行Hexo Studio')
+        }
+      })
+    </script>
     <style>
       html, body, #app { height: 100%; margin: 0px; padding: 0px; width: 100%; }
       .d2-home { background-color: #303133; height: 100%; display: flex; flex-direction: column; }
